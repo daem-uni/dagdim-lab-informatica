@@ -5,16 +5,16 @@ end1 = int(input("Inserire la fine uno: "))
 end2 = int(input("Inserire la fine due: "))
 
 if start1 > start2:
-	s = start1
+    s = start1
 else:
-	s = start2
+    s = start2
 
 if end1 < end2:
-	e = end1
+    e = end1
 else:
-	e = end2
+    e = end2
 
 if s < e:
-	print("Gli appuntamenti si sovrappongono")
+    print("Gli appuntamenti si sovrappongono")
 else:
-	print("Gli appuntamenti non si sovrappongono")
+    print("Gli appuntamenti non si sovrappongono")

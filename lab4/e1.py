@@ -8,27 +8,27 @@ last = ""
 dupes = ""
 
 while user_input != "":
-	num = int(user_input)
+    num = int(user_input)
 
-	if num > maximum:
-		maximum = num
-	if num < minimum:
-		minimum = num
+    if num > maximum:
+        maximum = num
+    if num < minimum:
+        minimum = num
 
-	running_sum += num
-	count += 1
+    running_sum += num
+    count += 1
 
-	if user_input == last and last != "":
-		dupes += user_input + " "
-	last = user_input
+    if user_input == last and last != "":
+        dupes += user_input + " "
+    last = user_input
 
-	print("Somma Parziale:", running_sum)
+    print("Somma Parziale:", running_sum)
 
 
-	user_input = input("Inserisci un altro numero (ENTER per finire): ")
+    user_input = input("Inserisci un altro numero (ENTER per finire): ")
 
 print()
 print("Il minimo è:", minimum)
 print("Il massimo è:", maximum)
 if len(dupes) > 0:
-	print("I numeri ripetuti sono:", dupes)
+    print("I numeri ripetuti sono:", dupes)
