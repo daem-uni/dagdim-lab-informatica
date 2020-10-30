@@ -3,9 +3,9 @@ string = input("Inserire una stringa: ")
 
 print("Le maiuscole sono: ", end="")
 
-for i in string:
-    if i.isupper():
-        print(i, end="")
+for letter in string:
+    if letter.isupper():
+        print(letter, end="")
 print()
 
 print("Stringa alterna: ", end="")
@@ -14,17 +14,17 @@ for i in range(0, len(string), 2):
 print()
 
 print("Senza vocali: ", end="")
-for i in string:
-    if i.lower() in "aeiou":
+for letter in string:
+    if letter.lower() in "aeiou":
         print("_", end="")
     else:
-        print(i, end="")
+        print(letter, end="")
 print()
 
 
 digits = 0
-for i in string:
-    if i.isdigit():
+for letter in string:
+    if letter.isdigit():
         digits += 1
 print("Numero Cifre:", digits)
 
