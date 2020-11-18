@@ -1,5 +1,4 @@
 def calculate_subsidy(income, children_count):
-
     if 30_000 <= income < 40_000 and children_count >= 3:
         return 1000 * children_count
     elif 20_000 <= income < 30_000 and children_count >= 2:
